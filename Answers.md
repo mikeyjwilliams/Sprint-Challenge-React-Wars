@@ -11,7 +11,7 @@ reactJS is view of the MVC model and tries to help aliviate the issue of heavy d
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
     a class component extends from the base class React and has all of its properties.
-    <!-- !!! come back to this -->
+    functional component presents data and is passed down props from other components and is sorta? a pure function in javascript.
 
 1.  Describe state.
 
