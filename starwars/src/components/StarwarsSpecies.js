@@ -5,8 +5,8 @@ import Species from './Species';
 const StarwarsSpecies = props => {
     return (
         <div className={"character-display"}>
-            {props.Species.map( (species) => {
-                return <StarwarsCharacter
+            {props.species.map( (species) => {
+                return <Species
                     key={species.created}
                     species={species}
                     />
