@@ -1,0 +1,12 @@
+
+
+.character-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.test {
+  width: 25%;
+ 
+  padding: 15px;
+}
