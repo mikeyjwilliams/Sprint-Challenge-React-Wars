@@ -7,7 +7,7 @@ const StarwarsFilms = props => {
         <ul className={""}>
             {props.films.map( (film) => {
                 return <Film 
-                    key={film.created}
+                    key={film.created + Date.now()}
                     film={film}
                     />
                 }

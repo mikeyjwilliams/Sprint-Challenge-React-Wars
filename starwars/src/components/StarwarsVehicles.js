@@ -1,18 +1,21 @@
 import React from 'react';
+
+import Vehicle from './Vehicle';
 import './StarWars.css';
+
 
 const StarwarsVehicles = props => {
     return (
-        <div className={""}>
-            {props.vehicles.map( (vehicle) => {
+        <ul className={""}>
+            {props.vehicles.map( (vehicles) => {
                 return <Vehicle
-                    key={vehicle.created}
-                    vehicle={vehicle}
+                    key={vehicles.created + Date.now()}
+                    vehicles={vehicles}
                     />
                 }
             )
         }
-        </div>
+        </ul>
     );
 }
 export default StarwarsVehicles;

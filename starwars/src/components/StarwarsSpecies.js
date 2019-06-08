@@ -4,16 +4,16 @@ import Species from './Species';
 
 const StarwarsSpecies = props => {
     return (
-        <div className={"character-display"}>
+        <ul className={"character-display"}>
             {props.species.map( (species) => {
                 return <Species
-                    key={species.created}
+                    key={species.created + Date.now()}
                     species={species}
                     />
                 }
             )
         }
-        </div>
+        </ul>
     );
 }
 export default StarwarsSpecies;

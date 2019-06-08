@@ -4,17 +4,17 @@ import StarwarsCharacter from './StarwarsCharacter';
 
 const StarwarsCharList = props => {
     return (
-        <div className={"character-display"}>
+        <ul className={"character-display"}>
             {props.starwarsCharacters.map( (character) => {
                 return <StarwarsCharacter
-                    key={character.created}
+                    key={character.created + Date.now()}
                     character={character}
                     characterDisplay={props.characterDisplay}
                     />
                 }
             )
         }
-        </div>
+        </ul>
     );
 }
 export default StarwarsCharList;
