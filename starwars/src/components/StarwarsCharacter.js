@@ -1,6 +1,7 @@
 import React from 'react';
 import './StarWars.css';
 import StarwarsFilms from './StarwarsFilms';
+import StarwarsSpecies from './StarwarsSpecies';
 
 const StarwarsCharacter = props => {
     return (
@@ -14,6 +15,13 @@ const StarwarsCharacter = props => {
                <li>Birth year: {props.character.birth_year}</li>
                <li>Home world: {props.character.homeworld}</li>
                <li>Films: <StarwarsFilms films={props.character.films} /></li>
+               <li>Species: <StarwarsSpecies species={props.character.species} /></li>
+               <li>vehicles: </li>
+               <li>starships: </li>
+               <li>Created: {props.character.created}</li>
+               <li>edited: {props.character.edited}</li>
+               <li>url: {props.character.url}</li>
+
            </ul>
 
         </div>
