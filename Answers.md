@@ -4,9 +4,18 @@
 
 reactJS is view of the MVC model and tries to help aliviate the issue of heavy data flow issues.
 
+build large fast scalable web apps.
+
 1.  What does it mean to _think_ in react?
 
     To think of items as components, and data flowing flowing only downwards.
+        
+        UI in a component hierarchy
+        identify the minimal (but complete) representation of UI state
+        identify where your state should live.
+        add inverse data flow
+
+
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
@@ -23,3 +32,5 @@ state requires a new array each time.
 
 props handle the data which is passed from above, and cannot be changed from a component below it to a component above it by props.
 they are sorta the object key  from the key value pair when passing data.
+
+they must be pure functions and cannot change their own props.
